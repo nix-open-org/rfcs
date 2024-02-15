@@ -1,5 +1,7 @@
 # Open Nix organisation
 
+Scratch space: https://pad.lassul.us/LLDT7BrRS8yE0p9ruU3_tw?edit
+
 ## Summary
 
 Create a public repository to be the source of truth for the Nix organisation, declaring who and what is part of it and who owns what.
