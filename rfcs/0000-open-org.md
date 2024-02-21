@@ -47,6 +47,13 @@ Currently there's no good process to archive old projects.
 The recent [teams collaboration effort](https://github.com/NixOS/teams-collaboration) started by @thufschmitt has seen some success.
 After general agreement in the meetings, [issues in various GitHub repos were opened](https://github.com/NixOS/teams-collaboration/issues/1) to ask for status, with @thufschmitt's intention to write a script to automate the archival for most of them.
 
+### Visibility into new and existing projects
+
+Currently, it is not straightforward for new (or even existing) contributors to know about all existing official projects and efforts.
+This might turn potential new contributors away from contributing, and might also make it difficult for any person to understand what new things are being worked on and what is the status of the existing projects and efforts.
+
+Some teams may have their own procedures for documenting this, but there is no standard for how to communicate this to external folks.
+
 ### Unclear how to get permissions
 
 There's currently no good general process for receiving permissions to help out with official efforts.
@@ -118,6 +125,9 @@ After a pull request is merged, the changes must be implemented, with automation
 Furthermore, in order for the repository to accurately reflect reality,
 changes to the Nix organisation must not be done without going through this repository first.
 
+Draft pull requests can be used as a way to give visibility into new efforts or projects that are not official yet, but have the intention to become official in the future.
+This might help find volunteers to contribute to the effort or project, and might also be a way to discuss and gather feedback while any work is being done.
+
 Notably this won't immediately change the processes we have today,
 they're only going to be made much more discoverable, explicit, transparent and declarative.
 
@@ -153,6 +163,15 @@ This could be used for these popular but unofficial projects:
 - Other repositories, such as
   - [flake-compat](https://github.com/edolstra/flake-compat)
   - [niv](https://github.com/nmattia/niv)
+
+### Give visibility to a new project or effort
+
+One or more persons may want to work on some new project or effort to improve an existing official resource, but they may not be ready to open a pull request to make it official yet.
+
+They open a draft pull request to give visibility to what they're working on.
+With this, they may find new volunteers willing to contribute, and/or may get early feedback from community members.
+
+Once they're ready to make the pull request "official", they may either mark the draft pull request as ready for review, or may close the draft pull request and open a new one (with a link to the closed pull request), depending on the amount of discussion that happened on the draft pull request and whether it is relevant.
 
 ### Demoting a project from being official
 
@@ -195,6 +214,12 @@ A previous iteration of this proposal proposed having a predefined policy for te
 - (-) This only is beneficial if the team policy never changes, but it definitely will.
 - (+) Starting out with an empty state gives a clear boundary between old processes and new ones
   - (-) If the "migration" to the new process fails, we'd be worse off in general
+
+A previous iteration of this proposal included a separate repository that also contained any unofficial projects or efforts, with the intention to be a single place for visibility into new or existing projects or efforts.
+- (+) Single place to browse for all projects and efforts within the Nix organisation (and perhaps outside it too).
+- (-) Confusing to have two repositories with related information, one for official resources and projects within the Nix organisation, and the other for anything not covered by the first one.
+- (-) Would not become a source of truth for unofficial projects or efforts, because there is no process or requirement for them to be listed there, only a slight incentive.
+- (-) Using draft pull requests in the single repository included in this proposal was deemed a better solution that still achieves the goal of bringing visibility to new projects or efforts.
 
 An alternative idea is keep the organisational source of truth as spread out as it is, but document it in a single place for transparency.
 - (+) This is much easier to do socially, as it only requires that single place to be created and somebody to maintain it
